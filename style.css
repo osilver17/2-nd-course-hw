@@ -5,7 +5,7 @@
   font-family: Montserrat;
 }
 
-.wellcome {
+.welcome {
   width: 1440px;
   height: 710px;
   position: relative;
@@ -14,12 +14,12 @@
   background-position: 60px -340px;
   margin: 0 auto;
 }
-.wellcome__text-wrapper {
+.welcome__text-wrapper {
   position: absolute;
   top: 196px;
   left: 120px;
 }
-.wellcome__heading {
+.welcome__heading {
   width: 769px;
   color: rgb(32, 32, 39);
   font-family: Montserrat;
@@ -29,7 +29,7 @@
   letter-spacing: 0px;
   text-align: left;
 }
-.wellcome__describe {
+.welcome__describe {
   width: 720px;
   margin-top: 24px;
   color: rgb(32, 32, 39);
@@ -40,10 +40,10 @@
   letter-spacing: 0px;
   text-align: left;
 }
-.wellcome__span {
+.welcome__span {
   font-weight: bold;
 }
-.wellcome__button {
+.welcome__button {
   width: 247px;
   height: 66px;
   margin-top: 48px;
@@ -58,7 +58,7 @@
   text-align: center;
   transition: all 0.2s;
 }
-.wellcome__button:hover {
+.welcome__button:hover {
   color: rgb(32, 32, 39);
   background-color: rgb(255, 255, 255);
 }/*# sourceMappingURL=style.css.map */
