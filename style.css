@@ -81,6 +81,7 @@
   height: 1470px;
   position: relative;
   background: rgb(32, 32, 39);
+  overflow: hidden;
 }
 .games-about__text-wrapper {
   position: absolute;
@@ -117,6 +118,24 @@
   grid-template-columns: repeat(12, 1fr);
   gap: 32px;
   align-items: start;
+}
+
+.star_1 {
+  position: absolute;
+  top: 77px;
+  left: 933px;
+}
+
+.star_11 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+}
+
+.star_12 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
 }
 
 .up-shift {
