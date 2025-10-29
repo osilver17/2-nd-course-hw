@@ -73,6 +73,7 @@
   width: 1440px;
   height: 90px;
   border: 2px solid rgb(225, 255, 143);
+  text-align: center;
 }
 
 .games-about {
