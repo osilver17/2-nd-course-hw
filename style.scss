@@ -79,6 +79,7 @@
   width: 1440px;
   height: 90px;
   border: 2px solid rgba(225, 255, 143, 1);
+  text-align: center;
 }
 
 .games-about {
@@ -86,6 +87,7 @@
   height: 1470px;
   position: relative;
   background: rgba(32, 32, 39, 1);
+  overflow: hidden;
 
   &__text-wrapper {
     position: absolute;
@@ -128,6 +130,24 @@
     align-items: start;
   }
 }
+
+.star_1 {
+  position: absolute;
+  top: 77px;
+  left: 933px;
+}
+
+.star_11 {
+  position: absolute;
+  top: 770px;
+  left: 25px;
+} 
+
+.star_12 {
+  position: absolute;
+  top: 822px;
+  left: 40px;
+} 
 
 .up-shift {
   margin-top: -30px;
