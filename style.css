@@ -46,6 +46,10 @@
   font-weight: bold;
 }
 .welcome__button {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
   width: 247px;
   height: 66px;
   margin-top: 48px;
