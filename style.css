@@ -5,23 +5,22 @@
   font-family: Montserrat;
 }
 
-.page-wrapper {
-  margin: 0 auto;
-  max-width: 1440px;
+.center {
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
 .header {
-  max-width: 1440px;
   min-height: 710px;
-  position: relative;
   background-color: rgb(225, 255, 143);
+}
+.header__content {
   background-image: url("img/BackGround.svg");
   background-position: 60px -340px;
 }
-.header__text-wrapper {
-  position: absolute;
-  top: 196px;
-  left: 120px;
+.header__content-wrapper {
+  display: inline-block;
+  margin-top: 196px;
 }
 .header__heading {
   max-width: 769px;
@@ -76,16 +75,9 @@
 }
 
 .games-about {
-  max-width: 1440px;
   min-height: 1470px;
-  position: relative;
   background: rgb(32, 32, 39);
   overflow: hidden;
-}
-.games-about__text-wrapper {
-  position: absolute;
-  top: 94px;
-  left: 119px;
 }
 .games-about__heading {
   color: rgb(255, 255, 255);
@@ -107,9 +99,6 @@
   text-align: left;
 }
 .games-about__card-wrapper {
-  position: absolute;
-  top: 364px;
-  left: 119px;
   max-height: 1060px;
   max-width: 1200px;
   margin: 0 auto;
@@ -120,19 +109,16 @@
 }
 
 .star_1 {
-  position: absolute;
   top: 77px;
   left: 933px;
 }
 
 .star_11 {
-  position: absolute;
   top: 770px;
   left: 25px;
 }
 
 .star_12 {
-  position: absolute;
   top: 822px;
   left: 40px;
 }
