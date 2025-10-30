@@ -7,24 +7,24 @@
 
 .page-wrapper {
   margin: 0 auto;
-  width: 1440px;
+  max-width: 1440px;
 }
 
-.welcome {
-  width: 1440px;
-  height: 710px;
+.header {
+  max-width: 1440px;
+  min-height: 710px;
   position: relative;
   background-color: rgb(225, 255, 143);
   background-image: url("img/BackGround.svg");
   background-position: 60px -340px;
 }
-.welcome__text-wrapper {
+.header__text-wrapper {
   position: absolute;
   top: 196px;
   left: 120px;
 }
-.welcome__heading {
-  width: 769px;
+.header__heading {
+  max-width: 769px;
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
@@ -32,8 +32,8 @@
   letter-spacing: 0px;
   text-align: left;
 }
-.welcome__describe {
-  width: 720px;
+.header__describe {
+  max-width: 720px;
   margin-top: 24px;
   color: rgb(32, 32, 39);
   font-size: 24px;
@@ -42,10 +42,10 @@
   letter-spacing: 0px;
   text-align: left;
 }
-.welcome__span {
+.header__span {
   font-weight: bold;
 }
-.welcome__button {
+.header__button {
   display: flex;
   text-decoration: none;
   justify-content: center;
@@ -64,21 +64,20 @@
   text-align: center;
   transition: all 0.2s;
 }
-.welcome__button:hover {
+.header__button:hover {
   color: rgb(32, 32, 39);
   background-color: rgb(255, 255, 255);
 }
 
 .animation-strip {
-  width: 1440px;
   height: 90px;
   border: 2px solid rgb(225, 255, 143);
   text-align: center;
 }
 
 .games-about {
-  width: 1440px;
-  height: 1470px;
+  max-width: 1440px;
+  min-height: 1470px;
   position: relative;
   background: rgb(32, 32, 39);
   overflow: hidden;
@@ -97,7 +96,7 @@
   text-align: left;
 }
 .games-about__describe {
-  width: 788px;
+  max-width: 788px;
   height: 96px;
   margin-top: 24px;
   color: rgb(255, 255, 255);
