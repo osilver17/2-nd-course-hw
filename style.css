@@ -70,10 +70,28 @@
   background-color: rgb(255, 255, 255);
 }
 
-.animation-strip {
-  height: 90px;
-  border: 2px solid rgb(225, 255, 143);
+.strip {
+  width: 3220;
+  max-height: 90px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   text-align: center;
+  background-color: rgb(188, 236, 48);
+}
+.strip__name {
+  padding-right: 51px;
+  color: rgb(32, 32, 39);
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 37px;
+  letter-spacing: 4%;
+  text-align: left;
+  text-transform: uppercase;
+}
+.strip__name::after {
+  content: url("img/Strip_Star.svg");
+  padding-left: 51px;
 }
 
 .games-about {

@@ -79,10 +79,31 @@ $header-height: 710px;
   }
 }
 
-.animation-strip {
-  height: 90px;
-  border: 2px solid rgba(225, 255, 143, 1);
+.strip {
+  width: 3220;
+  max-height: 90px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   text-align: center;
+  background-color:rgba(188, 236, 48, 1);
+
+  &__name {
+    padding-right: 51px;
+
+    color: rgba(32, 32, 39, 1);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__name::after {
+    content: url('img/Strip_Star.svg');
+    padding-left: 51px;
+  }
 }
 
 .games-about {
