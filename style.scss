@@ -5,22 +5,26 @@
   font-family: Montserrat;
 }
 
+$header-height: 710px;
+
 .center {
   padding-left: calc(50% - 720px);
   padding-right: calc(50% - 720px);
 }
 
 .header {
-  min-height: 710px;
+  min-height: $header-height;
   background-color: rgba(225, 255, 143, 1);
 
   &__content {
     background-image: url("img/BackGround.svg");
     background-position: 60px -340px;
+    min-height: $header-height;
   }
 
   &__content-wrapper {
     display: inline-block;
+    margin-left: 120px;
     margin-top: 196px;
   }
 
@@ -29,7 +33,7 @@
     color: rgba(32, 32, 39, 1);
     font-size: 64px;
     font-weight: 700;
-    line-height: 100%;
+    line-height: 78px;
     letter-spacing: 0px;
     text-align: left;
   }
@@ -83,11 +87,20 @@
 
 .games-about {
   min-height: 1470px;
-
   background: rgba(32, 32, 39, 1);
   overflow: hidden;
 
+  &__wrapper {
+    overflow: hidden;
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+
   &__text-wrapper {
+    margin-left: 120px;
+    margin-top: 94px;
+    margin-bottom: 72px;
   }
 
   &__heading {
@@ -123,18 +136,22 @@
   }
 }
 
+.astra {
+  position: absolute;
+}
+
 .star_1 {
   top: 77px;
   left: 933px;
 }
 
 .star_11 {
-  top: 770px;
+  top: 750px;
   left: 25px;
 }
 
 .star_12 {
-  top: 822px;
+  top: 800px;
   left: 40px;
 }
 
@@ -143,6 +160,7 @@
 }
 
 .game-card {
+  z-index: 1;
   width: 378px;
   text-decoration: none;
 

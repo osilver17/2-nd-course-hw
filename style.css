@@ -17,9 +17,11 @@
 .header__content {
   background-image: url("img/BackGround.svg");
   background-position: 60px -340px;
+  min-height: 710px;
 }
 .header__content-wrapper {
   display: inline-block;
+  margin-left: 120px;
   margin-top: 196px;
 }
 .header__heading {
@@ -27,7 +29,7 @@
   color: rgb(32, 32, 39);
   font-size: 64px;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 78px;
   letter-spacing: 0px;
   text-align: left;
 }
@@ -79,6 +81,17 @@
   background: rgb(32, 32, 39);
   overflow: hidden;
 }
+.games-about__wrapper {
+  overflow: hidden;
+  width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
+.games-about__text-wrapper {
+  margin-left: 120px;
+  margin-top: 94px;
+  margin-bottom: 72px;
+}
 .games-about__heading {
   color: rgb(255, 255, 255);
   font-size: 64px;
@@ -108,18 +121,22 @@
   align-items: start;
 }
 
+.astra {
+  position: absolute;
+}
+
 .star_1 {
   top: 77px;
   left: 933px;
 }
 
 .star_11 {
-  top: 770px;
+  top: 750px;
   left: 25px;
 }
 
 .star_12 {
-  top: 822px;
+  top: 800px;
   left: 40px;
 }
 
@@ -128,6 +145,7 @@
 }
 
 .game-card {
+  z-index: 1;
   width: 378px;
   text-decoration: none;
   display: flex;
