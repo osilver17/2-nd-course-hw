@@ -5,37 +5,41 @@
   font-family: Montserrat;
 }
 
-.page-wrapper {
-  margin: 0 auto;
-  width: 1440px;
+$header-height: 710px;
+
+.center {
+  padding-left: calc(50% - 720px);
+  padding-right: calc(50% - 720px);
 }
 
-.welcome {
-  width: 1440px;
-  height: 710px;
-  position: relative;
+.header {
+  min-height: $header-height;
   background-color: rgba(225, 255, 143, 1);
-  background-image: url("img/BackGround.svg");
-  background-position: 60px -340px;
 
-  &__text-wrapper {
-    position: absolute;
-    top: 196px;
-    left: 120px;
+  &__content {
+    background-image: url("img/BackGround.svg");
+    background-position: 60px -340px;
+    min-height: $header-height;
+  }
+
+  &__content-wrapper {
+    display: inline-block;
+    margin-left: 120px;
+    margin-top: 196px;
   }
 
   &__heading {
-    width: 769px;
+    max-width: 769px;
     color: rgba(32, 32, 39, 1);
     font-size: 64px;
     font-weight: 700;
-    line-height: 100%;
+    line-height: 78px;
     letter-spacing: 0px;
     text-align: left;
   }
 
   &__describe {
-    width: 720px;
+    max-width: 720px;
     margin-top: 24px;
     color: rgba(32, 32, 39, 1);
     font-size: 24px;
@@ -75,22 +79,49 @@
   }
 }
 
-.animation-strip {
-  width: 1440px;
-  height: 90px;
-  border: 2px solid rgba(225, 255, 143, 1);
+.strip {
+  width: 3220;
+  max-height: 90px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  text-align: center;
+  background-color:rgba(188, 236, 48, 1);
+
+  &__name {
+    padding-right: 51px;
+
+    color: rgba(32, 32, 39, 1);
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 37px;
+    letter-spacing: 4%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  &__name::after {
+    content: url('img/Strip_Star.svg');
+    padding-left: 51px;
+  }
 }
 
 .games-about {
-  width: 1440px;
-  height: 1470px;
-  position: relative;
+  min-height: 1470px;
   background: rgba(32, 32, 39, 1);
+  overflow: hidden;
+
+  &__wrapper {
+    overflow: hidden;
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
 
   &__text-wrapper {
-    position: absolute;
-    top: 94px;
-    left: 119px;
+    margin-left: 120px;
+    margin-top: 94px;
+    margin-bottom: 72px;
   }
 
   &__heading {
@@ -103,7 +134,7 @@
   }
 
   &__describe {
-    width: 788px;
+    max-width: 788px;
     height: 96px;
     margin-top: 24px;
     color: rgba(255, 255, 255, 1);
@@ -115,9 +146,6 @@
   }
 
   &__card-wrapper {
-    position: absolute;
-    top: 364px;
-    left: 119px;
     max-height: 1060px;
     max-width: 1200px;
     margin: 0 auto;
@@ -129,11 +157,31 @@
   }
 }
 
+.astra {
+  position: absolute;
+}
+
+.star_1 {
+  top: 77px;
+  left: 933px;
+}
+
+.star_11 {
+  top: 750px;
+  left: 25px;
+}
+
+.star_12 {
+  top: 800px;
+  left: 40px;
+}
+
 .up-shift {
   margin-top: -30px;
 }
 
 .game-card {
+  z-index: 1;
   width: 378px;
   text-decoration: none;
 

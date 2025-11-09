@@ -13,81 +13,93 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="page-wrapper">
-      <div class="welcome">
-        <div class="welcome__text-wrapper">
-          <h1 class="welcome__heading">
+    <header class="header center">
+      <div class="header__content">
+        <div class="header__content-wrapper">
+          <h1 class="header__heading">
             Добро пожаловать <br />
             на мой сайт мини-игр
           </h1>
-          <p class="welcome__describe">
+          <p class="header__describe">
             Тебе предстоит пройти несколько увлекательных игр. Если готов,
             нажимай
-            <span class="welcome__span">«Поехали!»</span> и
-            <span class="welcome__span">приступай</span>.
+            <span class="header__span">«Поехали!»</span> и
+            <span class="header__span">приступай</span>.
           </p>
-          <a class="welcome__button" href="#GA">Поехали!</a>
+          <a class="header__button" href="#GA">Поехали!</a>
         </div>
       </div>
-      <div class="animation-strip"></div>
-      <div class="games-about" id="GA">
+    </header>
+    <div class="strip">
+      <span class="strip__name">угадай число</span>
+      <span class="strip__name">Викторина</span>
+      <span class="strip__name">Переверни текст</span>
+      <span class="strip__name">Простая арифметика</span>
+      <span class="strip__name">Камень, ножницы, бумага</span>
+      <span class="strip__name">Генератор случайных цветов</span>
+    </div>
+    <div class="games-about center" id="GA">
+      <div class="games-about__wrapper">
         <div class="games-about__text-wrapper">
-          <h2 class="games-about__heading">Об играх</h2>
-          <p class="games-about__describe">
-            В моей коллекции представлено 6 игр на разные темы.Игры несложные —
-            в них может поиграть каждый. Все игры доступны для пользования.
-          </p>
-        </div>
-
-        <div class="games-about__card-wrapper">
-          <a class="game-card" href="#">
-            <img class="game-card__img" src="img/k1.svg" alt="Game №1" />
-            <div class="game-card__container">
-              <button class="game-card__button" type="button">Игра №1</button>
-              <h2 class="game-card__heading">Угадай число</h2>
-            </div>
-          </a>
-          <a class="game-card" href="#">
-            <img class="game-card__img" src="img/k2.svg" alt="Game №2" />
-            <div class="game-card__container">
-              <button class="game-card__button" type="button">Игра №2</button>
-              <h2 class="game-card__heading">Простая арифметика</h2>
-            </div>
-          </a>
-
-          <a class="game-card" href="#">
-            <img class="game-card__img" src="img/k3.svg" alt="Game №3" />
-            <div class="game-card__container">
-              <button class="game-card__button" type="button">Игра №3</button>
-              <h2 class="game-card__heading">Переверни текст</h2>
-            </div>
-          </a>
-
-          <a class="game-card up-shift" href="#">
-            <img class="game-card__img" src="img/k4.png" alt="Game №4" />
-            <div class="game-card__container">
-              <button class="game-card__button" type="button">Игра №4</button>
-              <h2 class="game-card__heading">Камень, ножницы, бумага</h2>
-            </div>
-          </a>
-
-          <a class="game-card" href="#">
-            <img class="game-card__img" src="img/k5.svg" alt="Game №5" />
-            <div class="game-card__container">
-              <button class="game-card__button" type="button">Игра №5</button>
-              <h2 class="game-card__heading">Простая викторина</h2>
-            </div>
-          </a>
-
-          <a class="game-card up-shift" href="#">
-            <img class="game-card__img" src="img/k6.svg" alt="Game №6" />
-            <div class="game-card__container">
-              <button class="game-card__button" type="button">Игра №6</button>
-              <h2 class="game-card__heading">Генератор случайных цветов</h2>
-            </div>
-          </a>
-        </div>
+        <h2 class="games-about__heading">Об играх</h2>
+        <p class="games-about__describe">
+          В моей коллекции представлено 6 игр на разные темы.Игры несложные — в
+          них может поиграть каждый. Все игры доступны для пользования.
+        </p>
       </div>
+      <img src="img/Star 1.svg" alt="Star_1" class="astra star_1" />
+      <img src="img/Star 11.svg" alt="Star_1" class="astra star_11" />
+      <img src="img/Star 12.svg" alt="Star_1" class="astra star_12" />
+      <div class="games-about__card-wrapper">
+        <a class="game-card" href="#">
+          <img class="game-card__img" src="img/k1.svg" alt="Game №1" />
+          <div class="game-card__container">
+            <button class="game-card__button" type="button">Игра №1</button>
+            <h2 class="game-card__heading">Угадай число</h2>
+          </div>
+        </a>
+        <a class="game-card" href="#">
+          <img class="game-card__img" src="img/k2.svg" alt="Game №2" />
+          <div class="game-card__container">
+            <button class="game-card__button" type="button">Игра №2</button>
+            <h2 class="game-card__heading">Простая арифметика</h2>
+          </div>
+        </a>
+
+        <a class="game-card" href="#">
+          <img class="game-card__img" src="img/k3.svg" alt="Game №3" />
+          <div class="game-card__container">
+            <button class="game-card__button" type="button">Игра №3</button>
+            <h2 class="game-card__heading">Переверни текст</h2>
+          </div>
+        </a>
+
+        <a class="game-card up-shift" href="#">
+          <img class="game-card__img" src="img/k4.png" alt="Game №4" />
+          <div class="game-card__container">
+            <button class="game-card__button" type="button">Игра №4</button>
+            <h2 class="game-card__heading">Камень, ножницы, бумага</h2>
+          </div>
+        </a>
+
+        <a class="game-card" href="#">
+          <img class="game-card__img" src="img/k5.svg" alt="Game №5" />
+          <div class="game-card__container">
+            <button class="game-card__button" type="button">Игра №5</button>
+            <h2 class="game-card__heading">Простая викторина</h2>
+          </div>
+        </a>
+
+        <a class="game-card up-shift" href="#">
+          <img class="game-card__img" src="img/k6.svg" alt="Game №6" />
+          <div class="game-card__container">
+            <button class="game-card__button" type="button">Игра №6</button>
+            <h2 class="game-card__heading">Генератор случайных цветов</h2>
+          </div>
+        </a>
+      </div>
+      </div>
+      
     </div>
   </body>
 </html>
