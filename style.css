@@ -201,4 +201,95 @@
 
 .game-card:hover {
   transform: scale(1.1);
+}
+
+.galery__conteiner {
+  background: rgb(32, 32, 39);
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: calc(100% - 49px) 111px, calc(100% - 125px) 85px, calc(100% - 47px) 3372px, calc(100% - 139px) 3426px;
+  background-image: url("/img/Star 6.svg"), url("/img/Star 7.svg"), url("/img/Star 8.svg"), url("/img/Star 10.svg");
+  overflow: hidden;
+  padding-bottom: 144px;
+}
+
+.galery {
+  border-radius: 30px;
+}
+.galery__item {
+  margin-bottom: 32px;
+  border-radius: 30px;
+  color: rgb(32, 32, 39);
+  background-repeat: no-repeat;
+  height: 500px;
+  width: 100%;
+  padding: 48px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+}
+.galery__item_right {
+  background-position-x: right;
+}
+.galery__item_left {
+  background-position-x: left;
+  align-items: flex-end;
+}
+.galery__item_1 {
+  background-image: url(/img/img1.svg);
+}
+.galery__item_2 {
+  background-image: url(/img/img2.svg);
+}
+.galery__item_3 {
+  background-image: url(/img/img3.svg);
+}
+.galery__item_4 {
+  background-image: url(/img/img4.svg);
+}
+.galery__item_5 {
+  background-image: url(/img/img5.svg);
+}
+.galery__item_6 {
+  background-image: url(/img/img6.svg);
+}
+.galery__title {
+  color: rgb(32, 32, 39);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 59px;
+  padding-bottom: 24px;
+  width: 504px;
+}
+.galery__text {
+  color: rgb(32, 32, 39);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  padding-bottom: 36px;
+  width: 500px;
+}
+.galery__button {
+  width: 247px;
+  height: 66px;
+  border: 1px solid rgb(32, 32, 39);
+  border-radius: 60px;
+  background: rgb(32, 32, 39);
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-right: 260px;
+  font-family: "Montserrat";
+}
+
+.footer {
+  height: 150px;
+  background: rgb(189, 237, 53);
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
+  padding-top: 61px;
 }/*# sourceMappingURL=style.css.map */
