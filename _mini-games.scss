@@ -1,7 +1,7 @@
 .mini-games {
     min-height: 1470px;
     background: rgb(32, 32, 39);
-    
+
     padding-bottom: 144px;
     &__heading {
         color: rgb(255, 255, 255);
@@ -11,10 +11,12 @@
         letter-spacing: 0px;
         text-align: left;
     }
-}
-.galery {
-    
-    border-radius: 30px;
+
+    &__content {
+        border-radius: 30px;
+        padding-left: 119px;
+        padding-right: 119px;
+    }
 
     &__item {
         margin-bottom: 32px;
@@ -83,6 +85,7 @@
         font-family: "Montserrat";
     }
 }
+
 .footer {
     height: 150px;
     background: rgb(189, 237, 53);

@@ -112,7 +112,6 @@ $header-height: 710px;
   overflow: hidden;
 
   &__wrapper {
-    overflow: hidden;
     width: 1440px;
     margin: 0 auto;
     position: relative;
@@ -223,7 +222,8 @@ $header-height: 710px;
 }
 
 .game-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); 
+  z-index: 3;
 }
 
 @import "mini-games";

@@ -100,7 +100,6 @@
   overflow: hidden;
 }
 .games-about__wrapper {
-  overflow: hidden;
   width: 1440px;
   margin: 0 auto;
   position: relative;
@@ -201,6 +200,7 @@
 
 .game-card:hover {
   transform: scale(1.1);
+  z-index: 3;
 }
 
 .mini-games {
@@ -216,11 +216,12 @@
   letter-spacing: 0px;
   text-align: left;
 }
-
-.galery {
+.mini-games__content {
   border-radius: 30px;
+  padding-left: 119px;
+  padding-right: 119px;
 }
-.galery__item {
+.mini-games__item {
   margin-bottom: 32px;
   border-radius: 30px;
   color: rgb(32, 32, 39);
@@ -232,32 +233,32 @@
   display: flex;
   flex-direction: column;
 }
-.galery__item_right {
+.mini-games__item_right {
   background-position-x: right;
 }
-.galery__item_left {
+.mini-games__item_left {
   background-position-x: left;
   align-items: flex-end;
 }
-.galery__item_1 {
+.mini-games__item_1 {
   background-image: url(/img/img1.svg);
 }
-.galery__item_2 {
+.mini-games__item_2 {
   background-image: url(/img/img2.svg);
 }
-.galery__item_3 {
+.mini-games__item_3 {
   background-image: url(/img/img3.svg);
 }
-.galery__item_4 {
+.mini-games__item_4 {
   background-image: url(/img/img4.svg);
 }
-.galery__item_5 {
+.mini-games__item_5 {
   background-image: url(/img/img5.svg);
 }
-.galery__item_6 {
+.mini-games__item_6 {
   background-image: url(/img/img6.svg);
 }
-.galery__title {
+.mini-games__title {
   color: rgb(32, 32, 39);
   font-size: 48px;
   font-weight: 700;
@@ -265,7 +266,7 @@
   padding-bottom: 24px;
   width: 504px;
 }
-.galery__text {
+.mini-games__text {
   color: rgb(32, 32, 39);
   font-size: 24px;
   font-weight: 400;
@@ -273,7 +274,7 @@
   padding-bottom: 36px;
   width: 500px;
 }
-.galery__button {
+.mini-games__button {
   width: 247px;
   height: 66px;
   border: 1px solid rgb(32, 32, 39);
