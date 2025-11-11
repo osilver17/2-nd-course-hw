@@ -110,17 +110,17 @@ $header-height: 710px;
   min-height: 1470px;
   background: rgba(32, 32, 39, 1);
 
-  &__wrapper {
-    width: 1440px;
-    margin: 0 auto;
-    position: relative;
-  }
-
   &__wrapper-to-hide-star-ends {
     width: 1440px;
     min-height: 1470px;
     margin: 0 auto;
     overflow: hidden;
+    position: relative;
+  }
+
+  &__wrapper {
+    width: 1440px;
+    margin: 0 auto;
   }
 
   &__text-wrapper {

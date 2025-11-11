@@ -98,16 +98,16 @@
   min-height: 1470px;
   background: rgb(32, 32, 39);
 }
-.games-about__wrapper {
-  width: 1440px;
-  margin: 0 auto;
-  position: relative;
-}
 .games-about__wrapper-to-hide-star-ends {
   width: 1440px;
   min-height: 1470px;
   margin: 0 auto;
   overflow: hidden;
+  position: relative;
+}
+.games-about__wrapper {
+  width: 1440px;
+  margin: 0 auto;
 }
 .games-about__text-wrapper {
   margin-left: 120px;
