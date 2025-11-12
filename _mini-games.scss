@@ -28,16 +28,13 @@
   }
 
   &__item {
-    // margin-bottom: 32px;
     border-radius: 30px;
     color: rgb(32, 32, 39);
     background-repeat: no-repeat;
     height: 500px;
     width: 100%;
-    padding: 48px;
     background-color: #ffffff;
     display: flex;
-    flex-direction: column;
     &_right {
       background-position-x: right;
     }
@@ -46,24 +43,7 @@
       align-items: flex-end;
     }
   }
-  &__item_1 {
-    background-image: url(/img/img1.svg);
-  }
-  &__item_2 {
-    background-image: url(/img/img2.svg);
-  }
-  &__item_3 {
-    background-image: url(/img/img3.svg);
-  }
-  &__item_4 {
-    background-image: url(/img/img4.png);
-  }
-  &__item_5 {
-    background-image: url(/img/img5.svg);
-  }
-  &__item_6 {
-    background-image: url(/img/img6.svg);
-  }
+  
   &__title {
     color: rgb(32, 32, 39);
     font-size: 48px;

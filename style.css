@@ -177,7 +177,7 @@
   transition: all 0.4s;
 }
 .game-card__container {
-  padding: 32px 45px 36px 32px;
+  padding: 32px 32px 36px 32px;
 }
 .game-card__button {
   height: 36px;
@@ -239,10 +239,8 @@
   background-repeat: no-repeat;
   height: 500px;
   width: 100%;
-  padding: 48px;
   background-color: #ffffff;
   display: flex;
-  flex-direction: column;
 }
 .mini-games__item_right {
   background-position-x: right;
@@ -250,24 +248,6 @@
 .mini-games__item_left {
   background-position-x: left;
   align-items: flex-end;
-}
-.mini-games__item_1 {
-  background-image: url(/img/img1.svg);
-}
-.mini-games__item_2 {
-  background-image: url(/img/img2.svg);
-}
-.mini-games__item_3 {
-  background-image: url(/img/img3.svg);
-}
-.mini-games__item_4 {
-  background-image: url(/img/img4.png);
-}
-.mini-games__item_5 {
-  background-image: url(/img/img5.svg);
-}
-.mini-games__item_6 {
-  background-image: url(/img/img6.svg);
 }
 .mini-games__title {
   color: rgb(32, 32, 39);
