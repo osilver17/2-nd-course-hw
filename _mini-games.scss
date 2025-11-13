@@ -27,20 +27,49 @@
     row-gap: 32px;
   }
 
-  &__item {
+  &__img {
+    width: 50%;
+    min-height: 500px;
+  }
+
+  &--img1 {   
+    background-image: url('img/img1.svg');
+  }
+
+  &--img2 {
+    background-image: url('img/img2.svg');
+  }
+
+  &--img3 {
+    background-image: url('img/img3.svg');
+  }
+
+  &--img4 {
+    background-image: url('img/img4.svg');
+  }
+
+  &--img5 {
+    background-image: url('img/img5.svg');
+  }
+
+  &--img6 {
+    background-image: url('img/img6.svg');
+  }
+
+  &__card {
+    width: 100%;
+    min-height: 500px;
     border-radius: 30px;
     color: rgb(32, 32, 39);
-    background-repeat: no-repeat;
-    height: 500px;
-    width: 100%;
+    
     background-color: #ffffff;
     display: flex;
-    &_right {
-      background-position-x: right;
-    }
-    &_left {
-      background-position-x: left;
-      align-items: flex-end;
+  }
+
+  &__game-description {
+    width: 50%;
+    &--left {
+      order: -1;
     }
   }
   

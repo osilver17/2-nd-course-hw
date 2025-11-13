@@ -1,5 +1,28 @@
 @media (max-width: 1439px) {
-   .games-about {
-     display: none;
-   }
- }
+  .games-about {
+    display: none;
+  }
+
+  .mini-games__game-description--left {
+    order: 0;
+  }
+
+  .mini-games__card {
+    width: 343px;
+    min-height: 568px;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 27.22px;
+    overflow: hidden;
+  }
+
+  .mini-games__img {
+    width: 100%;
+    min-height: 284px;
+  }
+
+  .mini-games__heading
+  {
+    font-size: 40px;
+  }
+}
