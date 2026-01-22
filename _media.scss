@@ -1,7 +1,21 @@
 @media (max-width: 1439px) {
+  .center {
+    padding-left: calc(50% - 376px);
+    padding-right: calc(50% - 376px);
+  }
   .header {
-    min-height: 710px;
+    min-height: 648px;
     background-color: rgb(225, 255, 143);
+
+    &__content {
+      background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 376px;
+      margin: 0 auto;
+      min-height: 648px;
+    }
 
     &__content-wrapper {
       width: 296px;
@@ -10,13 +24,13 @@
 
     &__heading {
       font-size: 40px;
-      line-height: 100%;
+      line-height: 125%;
       text-align: center;
     }
 
     &__describe {
       font-size: 16px;
-      line-height: 100%;
+      line-height: 125%;
       text-align: center;
     }
 
@@ -38,9 +52,9 @@
       line-height: 110%;
     }
     &__name::after {
-    content: url('img/Mini/Strip-Star.svg');
-    padding-left: 30px;
-  }
+      content: url("img/Mini/Strip-Star.svg");
+      padding-left: 30px;
+    }
   }
 
   .games-about {
