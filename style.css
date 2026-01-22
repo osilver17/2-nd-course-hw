@@ -304,6 +304,11 @@
   text-align: center;
   margin-right: 260px;
   font-family: "Montserrat";
+  transition: all 0.2s;
+}
+.mini-games__button:hover {
+  color: rgb(32, 32, 39);
+  background-color: rgb(255, 255, 255);
 }
 
 .star_6 {
