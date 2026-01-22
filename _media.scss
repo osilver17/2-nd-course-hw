@@ -1,4 +1,48 @@
 @media (max-width: 1439px) {
+  .header {
+    min-height: 710px;
+    background-color: rgb(225, 255, 143);
+
+    &__content-wrapper {
+      width: 296px;
+      margin: 0;
+    }
+
+    &__heading {
+      font-size: 40px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    &__describe {
+      font-size: 16px;
+      line-height: 100%;
+      text-align: center;
+    }
+
+    &__button {
+      width: 100%;
+    }
+  }
+
+  .strip {
+    max-height: 51.34px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    padding-right: 24px;
+    &__name {
+      padding-right: 30px;
+      font-size: 16px;
+      letter-spacing: 4%;
+      line-height: 110%;
+    }
+    &__name::after {
+    content: url('img/Mini/Strip-Star.svg');
+    padding-left: 30px;
+  }
+  }
+
   .games-about {
     display: none;
   }
