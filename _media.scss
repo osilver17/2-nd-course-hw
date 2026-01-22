@@ -3,26 +3,96 @@
     display: none;
   }
 
-  .mini-games__game-description--left {
-    order: 0;
+  .astra {
+    display: none;
   }
 
-  .mini-games__card {
-    width: 343px;
-    min-height: 568px;
-    margin: 0 auto;
-    flex-direction: column;
-    border-radius: 27.22px;
-    overflow: hidden;
-  }
+  .mini-games {
+    &__title,
+    &__text,
+    &__button {
+      width: 100%;
+      line-height: 125%;
+      margin: 0;
+    }
+    &__title {
+      font-size: 32px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+    &__button {
+      height: 55px;
+      font-size: 16px;
+    }
+    &__game-description {
+      width: 100%;
+      display: flex;
+      justify-content: center;
 
-  .mini-games__img {
-    width: 100%;
-    min-height: 284px;
-  }
+      &--left {
+        order: 0;
+      }
+      &--wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 285px;
+        margin: 24px;
+      }
+    }
 
-  .mini-games__heading
-  {
-    font-size: 40px;
+    &__wrapper {
+      padding-bottom: 9.88px;
+    }
+
+    &__content {
+      padding: 0%;
+      width: 376px;
+      margin: 0 auto;
+    }
+
+    &__card {
+      width: 343px;
+      min-height: 529px;
+      margin: 0 auto;
+      flex-direction: column;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+
+    &__img {
+      width: 100%;
+      min-height: 284px;
+    }
+
+    &--img1 {
+      background-image: url("img/Mini/1.svg");
+    }
+
+    &--img2 {
+      background-image: url("img/Mini/2.svg");
+    }
+
+    &--img3 {
+      background-image: url("img/Mini/3.svg");
+    }
+
+    &--img4 {
+      background-image: url("img/Mini/Kulak-mini.png");
+    }
+
+    &--img5 {
+      background-image: url("img/Mini/5.svg");
+    }
+
+    &--img6 {
+      background-image: url("img/Mini/6.svg");
+    }
+
+    &__heading {
+      font-size: 40px;
+      margin-left: 15px;
+      margin-bottom: 8px;
+    }
   }
 }

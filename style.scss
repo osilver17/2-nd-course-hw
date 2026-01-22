@@ -80,10 +80,11 @@ $header-height: 710px;
 }
 
 .strip {
+  min-width: 4000px;
   max-height: 90px;
   padding-top: 27px;
   padding-bottom: 27px;
-  text-align: center;
+  text-align: left;
   background-color:rgba(188, 236, 48, 1);
 
   &__name {

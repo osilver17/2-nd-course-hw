@@ -71,10 +71,11 @@
 }
 
 .strip {
+  min-width: 4000px;
   max-height: 90px;
   padding-top: 27px;
   padding-bottom: 27px;
-  text-align: center;
+  text-align: left;
   background-color: rgb(188, 236, 48);
 }
 .strip__name {
@@ -247,7 +248,7 @@
   background-image: url("img/img3.svg");
 }
 .mini-games--img4 {
-  background-image: url("img/img4.svg");
+  background-image: url("img/img4.png");
 }
 .mini-games--img5 {
   background-image: url("img/img5.svg");
@@ -265,9 +266,15 @@
 }
 .mini-games__game-description {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
 .mini-games__game-description--left {
   order: -1;
+}
+.mini-games__game-description--wrapper {
+  width: 504px;
+  margin: 48px;
 }
 .mini-games__title {
   color: rgb(32, 32, 39);
@@ -334,22 +341,79 @@
   .games-about {
     display: none;
   }
+  .astra {
+    display: none;
+  }
+  .mini-games__title, .mini-games__text, .mini-games__button {
+    width: 100%;
+    line-height: 125%;
+    margin: 0;
+  }
+  .mini-games__title {
+    font-size: 32px;
+  }
+  .mini-games__text {
+    font-size: 16px;
+  }
+  .mini-games__button {
+    height: 55px;
+    font-size: 16px;
+  }
+  .mini-games__game-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .mini-games__game-description--left {
     order: 0;
   }
+  .mini-games__game-description--wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 285px;
+    margin: 24px;
+  }
+  .mini-games__wrapper {
+    padding-bottom: 9.88px;
+  }
+  .mini-games__content {
+    padding: 0%;
+    width: 376px;
+    margin: 0 auto;
+  }
   .mini-games__card {
     width: 343px;
-    min-height: 568px;
+    min-height: 529px;
     margin: 0 auto;
     flex-direction: column;
-    border-radius: 27.22px;
+    border-radius: 30px;
     overflow: hidden;
   }
   .mini-games__img {
     width: 100%;
     min-height: 284px;
   }
+  .mini-games--img1 {
+    background-image: url("img/Mini/1.svg");
+  }
+  .mini-games--img2 {
+    background-image: url("img/Mini/2.svg");
+  }
+  .mini-games--img3 {
+    background-image: url("img/Mini/3.svg");
+  }
+  .mini-games--img4 {
+    background-image: url("img/Mini/Kulak-mini.png");
+  }
+  .mini-games--img5 {
+    background-image: url("img/Mini/5.svg");
+  }
+  .mini-games--img6 {
+    background-image: url("img/Mini/6.svg");
+  }
   .mini-games__heading {
     font-size: 40px;
+    margin-left: 15px;
+    margin-bottom: 8px;
   }
 }/*# sourceMappingURL=style.css.map */

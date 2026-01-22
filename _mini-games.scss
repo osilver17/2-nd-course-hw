@@ -45,7 +45,7 @@
   }
 
   &--img4 {
-    background-image: url('img/img4.svg');
+    background-image: url('img/img4.png');
   }
 
   &--img5 {
@@ -68,8 +68,15 @@
 
   &__game-description {
     width: 50%;
+    display: flex;
+    justify-content: center; 
     &--left {
       order: -1;
+    }
+
+    &--wrapper {
+      width: 504px;
+      margin: 48px;
     }
   }
   
