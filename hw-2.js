@@ -61,5 +61,5 @@ const user = {
 
 // Задание 10
 
-let userName = prompt("Какое Ваше имя?", user.name);
+let userName = prompt("Введите Ваше имя?", user.name);
 alert(`Привет, ${userName}!`);
