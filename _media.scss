@@ -1,8 +1,85 @@
-@media (max-width: 1439px) {
+@media (min-width: 850px) and (max-width: 1439px) {
+  .center {
+    padding: 0%;
+  }
+
+  .header {
+    width: 100%;
+    overflow: hidden;
+
+    &__content {
+      background-image: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__content-wrapper {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__describe,
+    &__heading {
+      text-align: center;
+    }
+  }
+
+  .games-about {
+    display: none;
+  }
+
+  .mini-games {
+    &__card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      border-radius: 60px;
+    }
+
+    &__img {
+      width: 100%;
+      background-size: cover;
+    }
+
+    &__button {
+      margin-right: 0px;
+    }
+
+    &__game-description {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      &--left {
+        order: -1;
+      }
+
+      &--wrapper {
+        width: 550px;
+        margin: 48px;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(236, 236, 236);
+        text-align: center;
+        align-items: center;
+        border-radius: 40px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 849px) {
   .center {
     padding-left: calc(50% - 376px);
     padding-right: calc(50% - 376px);
   }
+
   .header {
     min-height: 648px;
     background-color: rgb(225, 255, 143);
@@ -37,10 +114,12 @@
         top: 80px;
         left: 30px;
       }
+
       &--mini-star_3 {
         bottom: 80px;
         right: 80px;
       }
+
       &--mini-star_4 {
         bottom: 30px;
         right: 30px;
@@ -68,22 +147,26 @@
       width: 100%;
     }
   }
+
   .strip-wrapper-to-hide-strip-ends {
     width: 376px;
     margin: 0 auto;
   }
+
   .strip {
     max-height: 51.34px;
     padding-top: 16px;
     padding-bottom: 16px;
     padding-left: 20px;
     padding-right: 20px;
+
     &__name {
       padding-right: 25px;
       font-size: 16px;
       letter-spacing: 1px;
       line-height: 110%;
     }
+
     &__name::after {
       content: url("img/Mini/Strip-Star.svg");
       padding-left: 30px;
@@ -106,16 +189,20 @@
       line-height: 125%;
       margin: 0;
     }
+
     &__title {
       font-size: 32px;
     }
+
     &__text {
       font-size: 16px;
     }
+
     &__button {
       height: 55px;
       font-size: 16px;
     }
+
     &__game-description {
       width: 100%;
       display: flex;
@@ -124,6 +211,7 @@
       &--left {
         order: 0;
       }
+
       &--wrapper {
         display: flex;
         flex-direction: column;

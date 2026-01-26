@@ -33,7 +33,7 @@ alert(result);
 
 let aa = 9;
 let bb = 2;
-alert(aa % 2);
+alert(aa % bb);
 
 // Задание 7
 
