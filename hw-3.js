@@ -69,30 +69,30 @@ console.log("Задание 5");
 let monthNumber = Number(prompt("Введите номер месяца: (январь - это месяц №1)"));
 
 switch (monthNumber) {
-    case 12:;
-    case 1:;
-    case 2:;
+    case 12:
+    case 1:
+    case 2:
         console.log("monthNumber =", monthNumber);
         console.log("Это зима!");
         alert("Это зима!");
         break;
-    case 3:;
-    case 4:;
-    case 5:;
+    case 3:
+    case 4:
+    case 5:
         console.log("monthNumber =", monthNumber);
         console.log("Это весна!");
         alert("Это весна!");
         break;
-    case 6:;
-    case 7:;
-    case 8:;
+    case 6:
+    case 7:
+    case 8:
         console.log("monthNumber =", monthNumber);
         console.log("Это лето!");
         alert("Это лето!");
         break;
-    case 9:;
-    case 10:;
-    case 11:;
+    case 9:
+    case 10:
+    case 11:
         console.log("monthNumber =", monthNumber);
         console.log("Это осень!");
         alert("Это осень!");

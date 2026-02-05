@@ -21,7 +21,7 @@ $header-height: 710px;
     background-position: 60px -340px;
     min-height: $header-height;
 
-    &__mobile-star {
+    &--mobile-star {
       display: none;
     }
   }
@@ -174,17 +174,17 @@ $header-height: 710px;
   position: absolute;
 }
 
-.star_1 {
+.star1 {
   top: 77px;
   left: 933px;
 }
 
-.star_11 {
+.star11 {
   top: 750px;
   left: 25px;
 }
 
-.star_12 {
+.star12 {
   top: 800px;
   left: 40px;
 }
