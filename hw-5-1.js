@@ -234,7 +234,7 @@ const circle2 = {
     getPerimete: calcPerimeter, 
 }
 
-console.log(`circle1.getArea = ${circle1.getArea()}`);
-console.log(`circle2.getArea = ${circle2.getArea()}`);
-console.log(`circle1.getPerimete = ${circle1.getPerimete()}`);
-console.log(`circle2.getPerimete = ${circle2.getPerimete()}`);
+console.log(`circle1.getArea() = ${circle1.getArea()}`);
+console.log(`circle2.getArea() = ${circle2.getArea()}`);
+console.log(`circle1.getPerimete() = ${circle1.getPerimete()}`);
+console.log(`circle2.getPerimete() = ${circle2.getPerimete()}`);
