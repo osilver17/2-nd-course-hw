@@ -150,8 +150,8 @@ function multiplierOfNumbers(a, b) {
     console.log(`b = ${b}`);
 
     if (isNaN(a) || isNaN(b)) {
-        console.log("Одно или оба значения не являются числом.");
-        return;
+        //console.log("Одно или оба значения не являются числом.");
+        return "Одно или оба значения не являются числом.";
     }
     return a * b;
 }
@@ -225,16 +225,16 @@ function calcPerimeter() {
 const circle1 = {
     radius: 5,
     getArea: culcArea,
-    getPerimete: calcPerimeter, 
+    getPerimeter: calcPerimeter, 
 }
 
 const circle2 = {
     radius: 7,
     getArea: culcArea,
-    getPerimete: calcPerimeter, 
+    getPerimeter: calcPerimeter, 
 }
 
 console.log(`circle1.getArea() = ${circle1.getArea()}`);
 console.log(`circle2.getArea() = ${circle2.getArea()}`);
-console.log(`circle1.getPerimete() = ${circle1.getPerimete()}`);
-console.log(`circle2.getPerimete() = ${circle2.getPerimete()}`);
+console.log(`circle1.getPerimeter() = ${circle1.getPerimeter()}`);
+console.log(`circle2.getPerimeter() = ${circle2.getPerimeter()}`);
