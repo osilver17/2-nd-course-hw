@@ -17,18 +17,18 @@
 
 // Надо сгенерировать два числа и оператор.
 
-// const minNumber = 1;
-// const maxNumber = 100;
+const minNumber6 = 1;
+const maxNumber6 = 100;
 
-// function getRandomInt(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
+function getRandomInt6(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function calculateTheExpression() {
 
-    let operator = getRandomInt(1, 4);
+    let operator = getRandomInt6(1, 4);
 
     switch (operator) {
         case 1: operator = "+";
@@ -42,8 +42,8 @@ function calculateTheExpression() {
         default: operator = "+";
     }
 
-    let firstOperand = getRandomInt(minNumber, maxNumber);
-    let secondOperand = getRandomInt(minNumber, maxNumber);
+    let firstOperand = getRandomInt6(minNumber6, maxNumber6);
+    let secondOperand = getRandomInt6(minNumber6, maxNumber6);
     let annotationForDivision = "";
 
     let result;
@@ -54,7 +54,7 @@ function calculateTheExpression() {
             break;
         case "*":
             if (firstOperand > 10) {
-                secondOperand = getRandomInt(1, 10);
+                secondOperand = getRandomInt6(1, 10);
             }
             result = firstOperand * secondOperand;
             break;
@@ -65,7 +65,7 @@ function calculateTheExpression() {
                 firstOperand = promNumber;
             }
             if (secondOperand > 10) {
-                secondOperand = getRandomInt(1, 10);
+                secondOperand = getRandomInt6(1, 10);
             }
             
             annotationForDivision = " (при делении округляем с отбрасыванием дробной части)"
