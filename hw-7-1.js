@@ -73,12 +73,6 @@ console.log("");
 // Длина массива должна быть в два раза меньше переданного числа.
 console.log("Задание 6");
 
-function getRandomInt7(max, min = 0) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function returnArr(num) {
     num = Math.ceil(num);
     let id = num;
@@ -87,12 +81,13 @@ function returnArr(num) {
     }
     const arr = [];
     for (let i = 0; i < id / 2; i++) {
-        arr.push(getRandomInt7(num));
+        let randomNumber = Math.round(Math.random() * num);
+        arr.push(randomNumber);
     }
     return arr;
 }
 
-console.log(returnArr(5));
+console.log(returnArr(10));
 console.log("");
 
 // Задание 7
