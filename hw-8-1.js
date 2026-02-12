@@ -14,7 +14,7 @@ const people = [
 console.log(people.sort((a, b) => {
     return a.age - b.age;
 }));
-// код выше должен вывеcти =>
+// код выше должен вывеcти:
 // [
 //  { name: 'Олег', age: 7 },
 //  { name: 'Анна', age: 17 },
