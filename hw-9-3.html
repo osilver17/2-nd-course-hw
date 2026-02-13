@@ -1,0 +1,36 @@
+<!-- Задание 3. Динамическое изменение текста
+Задача: создайте кнопку, которая меняет текст в заголовке <h1>.
+
+Инструкция:
+
+В HTML создайте заголовок <h1> с текстом и кнопку.
+Используйте метод querySelector для получения ссылки на заголовок и кнопку.
+Используйте событие click и метод addEventListener, чтобы изменить текст заголовка при нажатии на кнопку.
+Как должно работать: нажатие на кнопку «Изменить текст» меняет текст заголовка на «Привет, мир!». -->
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="header-el" style="height: 30px">
+        Lorem ipsum dolor sit amet consectetur.
+    </h1>
+    <button class="change-text" style="width: 100px; height: 50px; font-size: large">
+        Изменить текст
+    </button>
+    <script>
+        const headerElement = document.querySelector(".header-el");
+        const buttonElement = document.querySelector(".change-text");
+
+        buttonElement.addEventListener("click", function () {
+            headerElement.textContent = "Привет, мир!";
+        });
+    </script>
+</body>
+
+</html>

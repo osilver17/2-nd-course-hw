@@ -1,0 +1,40 @@
+<!-- Задание 6. Добавление нового элемента в DOM
+Задача: создайте кнопку, которая добавляет новый элемент <p> с текстом в конец документа.
+
+Инструкция:
+
+В HTML создайте кнопку. Используйте метод createElement для создания нового элемента.
+Используйте appendChild для добавления нового элемента в конец документа при нажатии на кнопку.
+Как должно работать: 
+нажатие на кнопку «Добавить элемент» добавляет в конец страницы новый абзац с текстом «Новый абзац». -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="description" style="height: 30px;">Lorem ipsum dolor sit amet.</div>
+    <div class="description" style="height: 30px;">Lorem ipsum dolor sit amet.</div>
+    <div class="description" style="height: 30px;">Lorem ipsum dolor sit amet.</div>
+    <div class="description" style="height: 30px;">Lorem ipsum dolor sit amet.</div>
+    <div class="description" style="height: 30px;">Lorem ipsum dolor sit amet.</div>
+    <button id="addElement" style="height: 30px;">Добавить элемент</button>
+    <script>
+
+        const addBtn = document.querySelector('#addElement');
+        addBtn.addEventListener('click', function () {
+            const newElement = document.createElement('p');
+            newElement.textContent = "Новый абзац";
+            document.body.appendChild(newElement);
+            setTimeout(() => {document.body.insertBefore(newElement, addBtn);}, 500);   
+        });
+
+    </script>
+</body>
+
+</html>

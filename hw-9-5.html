@@ -1,0 +1,39 @@
+<!-- Задание 5. Работа с querySelectorAll
+Задача: создайте несколько элементов <p> с разными классами. 
+Используйте querySelectorAll, чтобы найти все элементы с классом description и изменить их текст.
+
+Инструкция:
+
+В HTML создайте несколько абзацев <p>, некоторые из них должны иметь класс description.
+Используйте querySelectorAll для поиска всех элементов с классом description.
+Переберите найденные элементы и измените их текстовое содержимое.
+Как должно работать: после выполнения скрипта все элементы с классом description изменяют свой текст на «Новый текст». -->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p class="description" style="height: 30px;">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+    <p class="desc" style="height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <p class="description" style="height: 30px;">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+    <p class="description" style="height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="script" style="height: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <button id="change-text" style="height: 30px;">Изменить текст</button>
+    <script>
+        const descriptionCollection = document.querySelectorAll('.description');
+        const changeBtn = document.querySelector('#change-text');
+        changeBtn.addEventListener('click', function () {
+            descriptionCollection.forEach(element => {
+                element.textContent = "Новый текст";
+            });
+        });
+
+    </script>
+</body>
+
+</html>
