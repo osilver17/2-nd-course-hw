@@ -47,15 +47,15 @@ function quizShow() {
     let rightAnswersCounter = 0;
 
     for (const item of quiz) {
-        let userAnswer = Number(prompt(`Введите номер правильного ответа на вопрос: 
+        let userAnswer = prompt(`Введите номер правильного ответа на вопрос: 
             ${item["question"]}
-            ${item.options.join("; ")}`));
+            ${item.options.join("; ")}`);
 
         // При "cancel" - принудительное завершение функции
-        if (userResponse === null) {
+        if (userAnswer === null) {
             return;
         }
-        if (userAnswer === item.correctAnswer) {
+        if (Number(userAnswer) === item.correctAnswer) {
             rightAnswersCounter++;
             alert("Ваш ответ правильный!");
         } else {
