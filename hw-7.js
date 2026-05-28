@@ -46,11 +46,16 @@ const quiz = [
 function quizShow() {
     let rightAnswersCounter = 0;
 
-    for(const item of quiz) {
+    for (const item of quiz) {
         let userAnswer = Number(prompt(`Введите номер правильного ответа на вопрос: 
             ${item["question"]}
             ${item.options.join("; ")}`));
-        if(userAnswer === item.correctAnswer) {
+
+        // При "cancel" - принудительное завершение функции
+        if (userResponse === null) {
+            return;
+        }
+        if (userAnswer === item.correctAnswer) {
             rightAnswersCounter++;
             alert("Ваш ответ правильный!");
         } else {

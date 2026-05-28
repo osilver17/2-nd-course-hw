@@ -26,8 +26,8 @@ function guessANumber() {
     do {
         const userNumber = prompt(`Введите число от ${minNumber} до ${maxNumber}`);
 
-        // Для отладки в консоли использовал принудительное завершение функции
-        if (userNumber === "!") {
+        // При "cancel" - принудительное завершение функции
+        if (userNumber === null) {
             return;
         }
 
@@ -49,8 +49,8 @@ function guessANumber() {
         }
 
         if (numUserNumber !== randomNumber) {
-            if(randomNumber < numUserNumber) alert("Вы не угадали число. Оно меньше. Введите снова.");
-            if(randomNumber > numUserNumber) alert("Вы не угадали число. Оно больше. Введите снова.");
+            if (randomNumber < numUserNumber) alert("Вы не угадали число. Оно меньше. Введите снова.");
+            if (randomNumber > numUserNumber) alert("Вы не угадали число. Оно больше. Введите снова.");
             continue;
         } else {
             alert("Вы угадали число!!! The game is over :-)");

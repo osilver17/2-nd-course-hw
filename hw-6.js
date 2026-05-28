@@ -67,7 +67,7 @@ function calculateTheExpression() {
             if (secondOperand > 10) {
                 secondOperand = getRandomInt6(1, 10);
             }
-            
+
             annotationForDivision = " (при делении округляем с отбрасыванием дробной части)"
             result = Math.floor(firstOperand / secondOperand);
             break;
@@ -77,20 +77,20 @@ function calculateTheExpression() {
     do {
         let userResponse = prompt(`Вычислите выражение: ${firstOperand} ${operator} ${secondOperand}${annotationForDivision} и введите ответ:`);
 
-        // Для выхода из игры набираем:
-        if (userResponse === "!") {
+        // При "cancel" - принудительное завершение функции
+        if (userResponse === null) {
             return;
         }
 
         if (userResponse === "") {
-            alert("Вы ничего не ввели! Введите число. Для выхода из игры введите '!'");
+            alert("Вы ничего не ввели! Введите число.");
             continue;
         }
 
         const numUserResponse = Number(userResponse);
 
         if (Number.isNaN(numUserResponse)) {
-            alert("Вы не ввели число! Введите число. Для выхода из игры введите '!'");
+            alert("Вы не ввели число! Введите число.");
             continue;
         }
 
@@ -98,7 +98,7 @@ function calculateTheExpression() {
             alert("Ваш ответ верен!");
             break;
         } else {
-            alert("Вы ошиблись :( Пересчитайте. Для выхода из игры введите '!'");
+            alert("Вы ошиблись :( Пересчитайте.");
             continue;
         }
 
