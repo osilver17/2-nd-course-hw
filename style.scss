@@ -7,6 +7,10 @@
 
 $header-height: 710px;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding-left: calc(50% - 720px);
   padding-right: calc(50% - 720px);
@@ -72,7 +76,7 @@ $header-height: 710px;
     font-size: 24px;
     font-weight: 600;
     line-height: 29px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
     text-align: center;
     transition: all 0.2s;
   }
@@ -83,17 +87,45 @@ $header-height: 710px;
   }
 }
 
+@keyframes scroll-left {
+  from {
+      right: 0px;
+    }
+
+  70% {
+    right: 1700px;
+  }
+
+  80% {
+    right: 1700px;
+  }
+
+  90% {
+    right: 0px;
+  }
+  
+  to {
+      right: 0px;
+    }
+}
+
 .strip-wrapper-to-hide-strip-ends {
   width: 1440px;
   overflow: hidden;
 }
 
 .strip {
-  width: 4000px;
+  position: relative;
+  width: 3550px;
   max-height: 90px;
   padding: 27px;
   text-align: left;
   background-color:rgba(188, 236, 48, 1);
+  animation: scroll-left 20s linear infinite;
+
+  &:hover {
+      animation-play-state: paused;
+    }
 
   &__name {
     padding-right: 45px;

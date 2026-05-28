@@ -1,11 +1,11 @@
 @media (min-width: 850px) and (max-width: 1439px) {
-  .center {
-    padding: 0%;
-  }
-
   .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     overflow: hidden;
+    
 
     &__content {
       background-image: none;
@@ -28,11 +28,47 @@
     }
   }
 
+    @keyframes scroll-left {
+      from {
+        right: 0px;
+      }
+  
+      70% {
+        right: 2235px;
+      }
+  
+      80% {
+        right: 2235px;
+      }
+  
+      90% {
+        right: 0px;
+      }
+  
+      to {
+        right: 0px;
+      }
+    }
+
+  .strip-wrapper-to-hide-strip-ends {
+    width: 850px;
+    overflow: hidden;
+  }
+
+  .strip {
+    width: 550vw;
+    position: relative;
+    padding: 27px;
+    text-align: left;
+  }
+
   .games-about {
     display: none;
   }
 
   .mini-games {
+    width: 100%;
+
     &__card {
       position: relative;
       display: flex;
@@ -47,6 +83,11 @@
 
     &__button {
       margin-right: 0px;
+    }
+
+    &__wrapper {
+      width: 850px;
+      margin: 0 auto;
     }
 
     &__game-description {
@@ -146,12 +187,39 @@
     &__button {
       width: 100%;
     }
+
+    &__button:hover {
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(32, 32, 39, 1);
+    }
   }
 
   .strip-wrapper-to-hide-strip-ends {
     width: 376px;
     margin: 0 auto;
   }
+
+    @keyframes scroll-left {
+      from {
+        right: 0px;
+      }
+  
+      70% {
+        right: 1355px;
+      }
+  
+      80% {
+        right: 1355px;
+      }
+  
+      90% {
+        right: 0px;
+      }
+  
+      to {
+        right: 0px;
+      }
+    }
 
   .strip {
     max-height: 51.34px;
@@ -188,6 +256,11 @@
       width: 100%;
       line-height: 125%;
       margin: 0;
+    }
+
+    &__button:hover {
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(32, 32, 39, 1);
     }
 
     &__title {

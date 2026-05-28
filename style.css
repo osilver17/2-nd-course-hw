@@ -5,6 +5,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .center {
   padding-left: calc(50% - 720px);
   padding-right: calc(50% - 720px);
@@ -64,7 +68,7 @@
   font-size: 24px;
   font-weight: 600;
   line-height: 29px;
-  letter-spacing: 0%;
+  letter-spacing: 0;
   text-align: center;
   transition: all 0.2s;
 }
@@ -73,17 +77,39 @@
   background-color: rgb(255, 255, 255);
 }
 
+@keyframes scroll-left {
+  from {
+    right: 0px;
+  }
+  70% {
+    right: 1700px;
+  }
+  80% {
+    right: 1700px;
+  }
+  90% {
+    right: 0px;
+  }
+  to {
+    right: 0px;
+  }
+}
 .strip-wrapper-to-hide-strip-ends {
   width: 1440px;
   overflow: hidden;
 }
 
 .strip {
-  width: 4000px;
+  position: relative;
+  width: 3550px;
   max-height: 90px;
   padding: 27px;
   text-align: left;
   background-color: rgb(188, 236, 48);
+  animation: scroll-left 20s linear infinite;
+}
+.strip:hover {
+  animation-play-state: paused;
 }
 .strip__name {
   padding-right: 45px;
@@ -352,10 +378,10 @@
 }
 
 @media (min-width: 850px) and (max-width: 1439px) {
-  .center {
-    padding: 0%;
-  }
   .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     overflow: hidden;
   }
@@ -375,8 +401,38 @@
   .header__describe, .header__heading {
     text-align: center;
   }
+  @keyframes scroll-left {
+    from {
+      right: 0px;
+    }
+    70% {
+      right: 2235px;
+    }
+    80% {
+      right: 2235px;
+    }
+    90% {
+      right: 0px;
+    }
+    to {
+      right: 0px;
+    }
+  }
+  .strip-wrapper-to-hide-strip-ends {
+    width: 850px;
+    overflow: hidden;
+  }
+  .strip {
+    width: 550vw;
+    position: relative;
+    padding: 27px;
+    text-align: left;
+  }
   .games-about {
     display: none;
+  }
+  .mini-games {
+    width: 100%;
   }
   .mini-games__card {
     position: relative;
@@ -390,6 +446,10 @@
   }
   .mini-games__button {
     margin-right: 0px;
+  }
+  .mini-games__wrapper {
+    width: 850px;
+    margin: 0 auto;
   }
   .mini-games__game-description {
     position: absolute;
@@ -473,9 +533,30 @@
   .header__button {
     width: 100%;
   }
+  .header__button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 39);
+  }
   .strip-wrapper-to-hide-strip-ends {
     width: 376px;
     margin: 0 auto;
+  }
+  @keyframes scroll-left {
+    from {
+      right: 0px;
+    }
+    70% {
+      right: 1355px;
+    }
+    80% {
+      right: 1355px;
+    }
+    90% {
+      right: 0px;
+    }
+    to {
+      right: 0px;
+    }
   }
   .strip {
     max-height: 51.34px;
@@ -504,6 +585,10 @@
     width: 100%;
     line-height: 125%;
     margin: 0;
+  }
+  .mini-games__button:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(32, 32, 39);
   }
   .mini-games__title {
     font-size: 32px;
